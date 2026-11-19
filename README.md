@@ -8,6 +8,7 @@
 
 An editorial, tactile artisan donut storefront featuring a real-time procedural 3D glaze studio, interactive shopping bag, and silky scroll-driven motion.
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-donutverse.pages.dev-D92B4B?style=flat-square&logo=cloudflarepages&logoColor=white)](https://donutverse.pages.dev)
 [![React](https://img.shields.io/badge/React-18.3-61DAFB?style=flat-square&logo=react&logoColor=1C0D0A)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Vite](https://img.shields.io/badge/Vite-6.0-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vite.dev/)
