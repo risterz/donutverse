@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --canvas: #FFF8F1;
+    --surface: #FFFDF9;
+    --blush: #FCE4EC;
+    --ink: #2A1510;
+    --ink-muted: #5E3A30;
+    --accent: #D92B4B;
+    --accent-hover: #B91E3B;
+  }
+
+  html {
+    background-color: var(--canvas);
+    color: var(--ink);
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    overflow-x: clip;
+  }
+
+  body {
+    overflow-x: clip;
+  }
+
+  /* Accessible visible focus ring everywhere */
+  *:focus-visible {
+    outline: 2px solid #D92B4B;
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+}
+
+.font-display-soft {
+  font-family: 'Fraunces', Georgia, serif;
+  font-variation-settings: 'SOFT' 100, 'WONK' 1;
+}
+
+.font-display-editorial {
+  font-family: 'Fraunces', Georgia, serif;
+  font-variation-settings: 'SOFT' 50, 'WONK' 0;
+}
+
+/* Subtle paper grain overlay strictly for warm tactile editorial feel on cream */
+.editorial-grain {
+  background-image: radial-gradient(rgba(42, 21, 16, 0.035) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+@keyframes slow-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-slow-spin {
+  animation: slow-spin 22s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-slow-spin {
+    animation: none;
+  }
+}
